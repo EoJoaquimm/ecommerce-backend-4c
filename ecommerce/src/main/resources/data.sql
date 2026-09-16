@@ -22,6 +22,22 @@ INSERT INTO participante (nome, email, telefone) VALUES ('Pedro Oliveira', 'pedr
 INSERT INTO participante (nome, email, telefone) VALUES ('Ana Souza', 'ana@email.com', '14999990004');
 INSERT INTO participante (nome, email, telefone) VALUES ('Lucas Costa', 'lucas@email.com', '14999990005');
 
+INSERT INTO produto (nome, descricao, estoque, preco, categoria_id)
+VALUES ('Notebook', 'Notebook para desenvolvimento de software', 10, 3500.00, 1);
+
+INSERT INTO produto (nome, descricao, estoque, preco, categoria_id)
+VALUES ('Teclado Mecânico', 'Teclado para programação', 25, 250.00, 1);
+
+INSERT INTO produto (nome, descricao, estoque, preco, categoria_id)
+VALUES ('Mouse Sem Fio', 'Mouse ergonômico para computador', 30, 120.00, 1);
+
+INSERT INTO produto (nome, descricao, estoque, preco, categoria_id)
+VALUES ('Curso de Java', 'Curso completo de desenvolvimento Java', 50, 300.00, 2);
+
+INSERT INTO produto (nome, descricao, estoque, preco, categoria_id)
+VALUES ('Livro de Programacao', 'Livro sobre desenvolvimento de software', 20, 100.00, 5);
+
+
 INSERT INTO evento (nome, descricao, data_inicio, data_fim, capacidade, status, categoria_id, local_id, palestrante_id)
 VALUES ('Semana de Tecnologia', 'Evento sobre tecnologia', '2026-10-01 19:00:00', '2026-10-01 22:00:00', 300, 'ATIVO', 1, 1, 1);
 
@@ -49,5 +65,4 @@ VALUES ('2026-09-03 10:00:00', 'PENDENTE', 3, 3);
 INSERT INTO inscricao (data_inscricao, status, evento_id, participante_id)
 VALUES ('2026-09-04 10:00:00', 'CONFIRMADA', 4, 4);
 
-INSERT INTO inscricao (data_inscricao, status, evento_id, participante_id)
-VALUES ('2026-09-05 10:00:00', 'CONFIRMADA', 5, 5);
+INSERT INTO inscricao (data_inscricao, status, evento_id, participante_id) VALUES ('2026-09-05 10:00:00', 'CONFIRMADA', 5, 5);

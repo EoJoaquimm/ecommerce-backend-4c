@@ -13,17 +13,17 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-
 public class Produto {
+
     @Id
-    @GeneratedValue (strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-        
+
     private String nome;
 
     private String descricao;
 
-    private Short estoque; 
+    private Short estoque;
 
     private BigDecimal preco;
 
